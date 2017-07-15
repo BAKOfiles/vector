@@ -5,15 +5,15 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:25d2e141cf
-## A really bad movie
+## R Notebook - Vector
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+오늘은 벡터에 대해서 배워보도록 할게요.
+오른쪽 그림을 보고, 벡터가 몇차원인지 클릭해봅시다.
 
 *** =instructions
-- Adventure
-- Action
-- Animation
-- Comedy
+- 1차원
+- 2차원
+- 3차원
 
 *** =hint
 Have a look at the plot. Which color does the point with the lowest rating have?
