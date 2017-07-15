@@ -26,8 +26,8 @@ Have a look at the plot. Which color does the point with the lowest rating have?
 #plot(img)
 
 library(imager)
-png2 <- system.file('vector/img/2png.png', package = 'imager')  
-im <- load.image(png2)
+file <- system.file('vector/img/2png.png', package = 'imager')  
+im <- load.image(file)
 plot(im)
 
 
@@ -37,8 +37,8 @@ plot(im)
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
+msg_bad <- "다시 생각해보세요."
+msg_success <- "벡터는 1차원 입니다. "
 test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
