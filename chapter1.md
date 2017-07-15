@@ -16,14 +16,7 @@ attachments :
 - 3차원
 
 *** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
-
-#*** =pre_exercise_code
-```{r}
-# image loadings
-#png("vector/img/2png.png")
-#img <- read("vector/img/2png.png")
-#plot(img)
+행렬은 2차원입니다. 배열은 다차원 입니다. 
 
 
 ```
