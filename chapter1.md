@@ -18,7 +18,6 @@ attachments :
 *** =hint
 행렬은 2차원입니다. 배열은 다차원 입니다. 
 
-
 ```
 
 *** =sct
@@ -27,7 +26,7 @@ attachments :
 
 msg_bad <- "다시 생각해보세요."
 msg_success <- "정답이예요. 벡터는 1차원 입니다."
-test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e25e666443
