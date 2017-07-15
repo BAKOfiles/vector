@@ -89,12 +89,13 @@ is(flu_status)
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+ex() %>% check_object('subject_name')
+ex() %>% check_object('temperature')
+ex() %>% check_object('flu_status')
 
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
-
-test_object("flu_status")
+ex() %>% check_output_expr("is(subject_name)")
+ex() %>% check_output_expr("is(temperature)")
+ex() %>% check_output_expr("is(flu_status)")
 
 
 test_error()
