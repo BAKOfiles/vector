@@ -84,7 +84,6 @@ is(subject_name)
 is(temperature)
 # 변수명 `flu_status` 벡터 원소값 확인
 is(flu_status)
-
 ```
 
 *** =sct
