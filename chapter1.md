@@ -48,12 +48,13 @@ test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 R에서는 벡터가 가장 작은 단위입니다. 
 R은 통계를 위해 만들어졌기 때문에, 벡터를 이용해서 진행합니다. 
 
-
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
+이번 장에서는 벡터를 이용하여, 
+John Doe, Jane Doe, Steve Graves의 벡터를 만들고,
+변수들의 status를 확인해보도록 합니다. 
 
 *** =instructions
-- "John Doe", "Jane Doe", "Steve Graves"인 벡터들을 'subject_name'에 넣어봅시다. 
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
+- "John Doe", "Jane Doe", "Steve Graves"인 벡터들을  `subject_name`에 넣어봅시다. 
+- (98.1, 98.6, 101.4), 3가지 값을 `temperature`에 넣어봅시다.  
 - Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
 
 *** =hint
