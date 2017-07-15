@@ -89,16 +89,18 @@ John Doe, Jane Doe, Steve Graves의 벡터를 만들고,
 
 *** =solution
 ```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-str(movie_selection)
-
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
+# 변수명 `subject_name`
+subject_name <- c("John Doe", "Jane Doe", "Steve Graves")
+# 변수명 `temperature`
+temperature <- c(98.1, 98.6, 101.4)
+# 변수명 `flu_status`
+flu_status <- c(FALSE, FALSE, TRUE)
+# 변수명 `subject_name` 벡터 원소값 확인
+is(subject_name)
+# 변수명 `temperature` 벡터 원소값 확인
+is(temperature)
+# 변수명 `flu_status` 벡터 원소값 확인
+is(flu_status)
 ```
 
 *** =sct
