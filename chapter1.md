@@ -101,17 +101,19 @@ is(subject_name)
 is(temperature)
 # 변수명 `flu_status` 벡터 원소값 확인
 is(flu_status)
+# Check out the structure of movie_selection
+str(movie_selection)
+
+# Select movies that have a rating of 5 or higher: good_movies
+good_movies <- movie_selection[movie_selection$Rating >= 5, ]
+
+# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
 ```
 
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
-
-test_object("good_movies")
 
 test_function("plot", args = "x")
 test_function("plot", args = "y")
