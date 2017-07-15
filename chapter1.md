@@ -21,7 +21,7 @@ Have a look at the plot. Which color does the point with the lowest rating have?
 *** =pre_exercise_code
 ```{r}
 # image loadings
-
+install.packages("png")
 library(png)
 img <- readPNG('2png.png')
 plot(img)
