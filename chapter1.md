@@ -62,15 +62,6 @@ John Doe, Jane Doe, Steve Graves의 벡터를 만들고,
 - 변수명 <- c(3가지 값)
 - 변수명에는 변수명만 넣으세요. 따옴표 붙이지 않습니다. 
 
-#*** =pre_exercise_code
-#```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
-#load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
-#movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
-# Clean up the environment
-#rm(Movies)
-```
-
 *** =sample_code
 ```{r}
 # 변수명 `subject_name`
