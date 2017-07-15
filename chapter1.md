@@ -99,10 +99,6 @@ is(flu_status)
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
-
 test_error()
 
 success_msg("Good work!")
