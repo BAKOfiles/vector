@@ -25,11 +25,11 @@ Have a look at the plot. Which color does the point with the lowest rating have?
 #img <- read("vector/img/2png.png")
 #plot(img)
 
+library(imager)
+png2 <- load.image('vector/img/2png.png', package='imager')  
+im <- load.image(png2)
+plot(im)
 
-png(file = "vector/img/2png.png")
-plot(3:4)
-rect(1, 5, 3, 7, col = "white")
-dev.off()
 
 ```
 
