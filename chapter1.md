@@ -53,36 +53,38 @@ John Doe, Jane Doe, Steve Graves의 벡터를 만들고,
 변수들의 status를 확인해보도록 합니다. 
 
 *** =instructions
-- "John Doe", "Jane Doe", "Steve Graves"인 벡터들을  `subject_name`에 넣어봅시다. 
-- (98.1, 98.6, 101.4), 3가지 값을 `temperature`에 넣어봅시다.  
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+- John Doe, Jane Doe, Steve Graves, 3가지 값을 변수명 `subject_name`에 넣어봅시다. 
+
+- 98.1, 98.6, 101.4, 3가지 값을 변수명 `temperature`에 넣어봅시다. 
+ 숫자에는 "따옴표"를 붙이지 않습니다.
+
+- FALSE, FALSE, TRUE, 3가지 값을 변수명 `flu_status`에 넣어봅시다. 
+단,TRUE, FALSE는 바이너리 값입니다. 따옴표를 붙이지 않습니다.  
+
+- is(변수명)을 통해서 원소값을 확인합니다. 
 
 *** =hint
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
+- 변수명 <- c(3가지 값)
+- 변수명에는 변수명만 넣으세요. 따옴표 붙이지 않습니다. 
 
-*** =pre_exercise_code
-```{r}
+#*** =pre_exercise_code
+#```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
-load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
-
+#load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
+#movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
 # Clean up the environment
-rm(Movies)
+#rm(Movies)
 ```
 
 *** =sample_code
 ```{r}
-# movie_selection is available in your workspace
+# 변수명 `subject_name`
 
-# Check out the structure of movie_selection
+# 변수명 `temperature`
 
+# 변수명 `flu_status`
 
-# Select movies that have a rating of 5 or higher: good_movies
-
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+# 벡터의 원소값 확인
 
 ```
 
