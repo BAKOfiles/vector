@@ -43,14 +43,16 @@ test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e25e666443
-## More movies
+## R -- Vector
 
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
+R에서는 벡터가 가장 작은 단위입니다. 
+R은 통계를 위해 만들어졌기 때문에, 벡터를 이용해서 진행합니다. 
+
 
 A dataset with a selection of movies, `movie_selection`, is available in the workspace.
 
 *** =instructions
-- Check out the structure of `movie_selection`.
+- "John Doe", "Jane Doe", "Steve Graves"인 벡터들을 'subject_name'에 넣어봅시다. 
 - Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
 - Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
 
