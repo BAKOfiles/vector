@@ -96,9 +96,6 @@ test_function("str", args = "object",
 
 test_object("flu_status")
 
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
 
 test_error()
 
