@@ -18,17 +18,12 @@ attachments :
 *** =hint
 Have a look at the plot. Which color does the point with the lowest rating have?
 
-*** =pre_exercise_code
+#*** =pre_exercise_code
 ```{r}
 # image loadings
 #png("vector/img/2png.png")
 #img <- read("vector/img/2png.png")
 #plot(img)
-
-library(imager)
-file <- system.file('vector/img/2png.png', package = 'imager')  
-im <- load.image(file)
-plot(im)
 
 
 ```
@@ -38,7 +33,7 @@ plot(im)
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
 msg_bad <- "다시 생각해보세요."
-msg_success <- "벡터는 1차원 입니다. "
+msg_success <- "정답이예요. 벡터는 1차원 입니다."
 test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
@@ -84,7 +79,11 @@ John Doe, Jane Doe, Steve Graves의 벡터를 만들고,
 
 # 변수명 `flu_status`
 
-# 벡터의 원소값 확인
+# 변수명 `subject_name` 벡터 원소값 확인
+
+# 변수명 `temperature` 벡터 원소값 확인
+
+# 변수명 `flu_status` 벡터 원소값 확인
 
 ```
 
